@@ -7,52 +7,184 @@
     /* border: 1px solid  red; */
     margin: auto;
     width: 100%;
-    /* background-color: yellow; */
+    /* background-color: rgb(204, 204, 195); */
 }
 .container1{
-    border: 1px solid  rgb(0, 255, 234);
-    width: 100%;
+    /* border: 1px solid  rgb(0, 255, 234); */
+    width: 90%;
+    margin:  5% auto;
     display: flex;
     flex-direction: row;
 }
 .first{
-    border: 1px solid  rgb(0, 255, 234);
+    /* border: 1px solid  rgb(0, 255, 234); */
     width: 80%;
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+
 }
 .second{
-    border: 1px solid  red;
-    width: 20%;
+    /* border: 1px solid  red; */
+    width: 25%;
+    border-radius: 12px;
+    margin-left: 18px;
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 4px 20px 5px 2px rgb(212, 207, 207);
 }
 .jeneflex{
     display: flex;
     flex-direction: row;  
-    background-color: brown;
+    /* background-color: brown; */
+    margin-top: 2%;
 }
 .Kiraflex{
     display: flex;
     flex-direction: row;
+    margin-left: 5%;
+    margin-top: 6%;
+    text-wrap: nowrap;
+}
+ .jene .Kiraflex{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-top: 10%;
+    
+}
+.jona .Kiraflex{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.cli{
+    margin-left: 3%;
 }
 .danielflex{
-    border: 1px solid  rgb(255, 0, 170);
+    /* border: 1px solid  rgb(255, 0, 170); */
     display: flex;
     flex-direction: row;
 }
 .danielcliford{
-    border: 1px solid  rgb(217, 255, 0);
+  background-image: url(/images/bg-pattern-quotation.svg);
+  background-position: 80% 2%;
+  background-repeat: no-repeat;
     background-color: hsl(263, 55%, 52%);
-    width: 60%;
+    width: 100%;
     border-radius: 15px;
     margin-left: 5%;
     color: white;
+    margin-right: 3%;
+    box-shadow: 4px 20px 5px 2px rgb(212, 207, 207);
+}
+.danielcliforde{
+    /* border: 1px solid  rgb(217, 255, 0); */
+    background-color: hsl(219, 29%, 14%);
+    width: 100%;
+    border-radius: 15px;
+    margin-left: 5%;
+    color: white;
+    margin-right: 3%;
+    box-shadow: 4px 20px 5px 2px rgb(212, 207, 207);
 }
 .jona{
-    border: 1px solid  rgb(217, 255, 0);
+    /* border: 1px solid  rgb(217, 255, 0); */
     background-color: hsl(219, 29%, 14%);
-    width: 30%;
+    width: 50%;
     border-radius: 15px;
     color: white;
+    margin-left: 3%;
+    margin-right: 3%;
+    box-shadow: 4px 20px 5px 2px rgb(212, 207, 207);
+}
+
+.jene{
+    /* border: 1px solid  rgb(217, 255, 0); */
+    background-color: hsl(0, 0%, 100%);
+    width: 60%;
+    border-radius: 15px;
+    color: black;
     margin-left: 5%;
+    box-shadow: 4px 20px 5px 2px rgb(212, 207, 207);
+}
+h2{
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 21px;
+}
+p{
+    margin-top: 3%;
+    margin-left: 7%;
+    margin-right: 7%;  
+    margin-bottom: 5%;
+    font-size: 16px;
+}
+.jene p{
+    margin-top: 3%;
+    margin-left: 7%;
+    margin-right: 7%;  
+    /* margin-bottom: 3%; */
+    font-size: 17px;
+    /* border: 1px solid tan; */
+}
+.jona p{
+    margin-top: 3%;
+    margin-left: 7%;
+    margin-right: 7%;  
+    /* margin-bottom: 3%; */
+    font-size: 17px;
+    /* font-size: small; */
+    /* border: 1px solid tan; */
+}
+img{
+    border-radius: 50%;
+}
+.kir{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+   body{
+    margin: none;
+    overflow: hidden;
+   }
+    .container1{
+        flex-direction: column;
+        width: 100%;
+        margin: none;
+        margin-right: none;
+
+    }
+    .first{
+        flex-direction: column;
+        width: 100%;
+    }
+    .jeneflex{
+        flex-direction: column;
+        width: 100%;
+    }
+    .danielflex{
+        flex-direction: column;
+        width: 100%;
+    }
+    .jona{
+        width: 100%;
+    }
+    .jene{
+        width: 100%;
+    }
+    .second{
+            width: 100%;
+        
+    }
+    .main{
+        margin: none;
+        overflow: hidden;
+    }
+    .danielcliford{
+        background-image: none;
+        margin: none;
+    }
 }
